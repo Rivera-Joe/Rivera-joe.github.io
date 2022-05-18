@@ -1,0 +1,9 @@
+#sites a{
+    color: #000;
+}
+
+#sites li{
+    min-height: 40px;
+    min-width: 80px;
+    text-align: center;
+}

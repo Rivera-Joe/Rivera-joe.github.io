@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: garamond, serif;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    margin-bottom: 1.5em;
+    
+}
 
 header{
     width: 100vw;
@@ -53,6 +60,12 @@ section{
     margin-right: auto;
     padding: 1em;
     margin-top: 2em;
+}
+#intro h1{
+    margin-bottom: 1.3em;
+}
+#welcome h2{
+    margin-bottom: 1.3em;
 }
 picture{
     max-width: 75%;
