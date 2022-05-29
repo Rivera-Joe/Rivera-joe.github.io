@@ -27,7 +27,7 @@ header{
 nav{
     width: 100vw;
     min-height: 40px;
-    border-bottom: 3px solid var(--teal);
+    border-bottom: 2px solid var(--teal);
 }
 
 nav ul{
@@ -37,6 +37,7 @@ nav ul{
     align-items: center;
     justify-content: space-evenly;
     list-style-type: none;
+    background-color: var(--mistyBlue);
     
     
     
@@ -56,7 +57,7 @@ nav ul li a{
     text-decoration: none;
     font-family: "bodoni", garamond, serif;
     font-size: 1.1em;
-    font-weight: 600;
+    font-weight: 700;
     color: #000;
 }
 
@@ -91,4 +92,67 @@ main{
     margin: auto;
     background-color: var(--mistyBlue);
     border-radius: 20px;
+}
+
+
+footer{
+    margin-top: 325px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12.5% 5px 12.5%;
+    width: 100vw;
+    max-height: 100px;
+}
+
+/* --mobile nav -- */
+
+#mobileBox{
+    width: 100vw;
+    text-align: center;
+    display: none;
+    /* hidden currently */
+}
+#ham{
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    margin-right: 0;
+    margin-left: 85%;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+#bar{
+    content: "";
+    background-color: var(--mistyBlue);
+    height: 6px;
+    width: 27px;
+}
+#bar::before{
+    content: "";
+    background-color: var(--mistyBlue);
+    height: 6px;
+    width: 27px;
+    position: absolute;
+    transform: translate(-13px, -10px);
+    
+    
+   
+}
+#bar::after{
+    content: "";
+    background-color: var(--mistyBlue);
+    height: 6px;
+    width: 27px;
+    position: absolute;
+    transform: translate(-13px, 10px);
+    
+    
+   
 }
