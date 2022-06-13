@@ -48,7 +48,7 @@ nav ul li{
     padding-top: 10px;
     text-align: center;
 }
-nav ul li:hover{
+nav ul li a:hover{
     background-color: var(--teal);
 }
 
@@ -58,7 +58,10 @@ nav ul li a{
     font-family: "bodoni", garamond, serif;
     font-size: 1.1em;
     font-weight: 700;
+    
     color: #000;
+    min-width: 100px;
+    padding: 10px 20px 6px 20px;
 }
 
 h1{
@@ -167,7 +170,7 @@ footer{
     line-height: 4em;
 }
 
-@media all and (max-width: 500px ) 
+@media all and (max-width: 580px ) 
 {
     #ham{
         display: flex;

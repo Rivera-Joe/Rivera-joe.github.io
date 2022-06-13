@@ -1,7 +1,13 @@
 #sites a{
     color: #000;
+    font-family: Verdana, Garamond, serif;
+    
 }
 
+#sites{
+    list-style-type: none;
+    margin-top: 2rem;
+}
 #sites li{
     min-height: 40px;
     min-width: 80px;
