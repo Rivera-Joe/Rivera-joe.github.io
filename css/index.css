@@ -50,6 +50,7 @@ nav ul li{
 }
 nav ul li a:hover{
     background-color: var(--teal);
+    color: var(--mistyBlue);
 }
 
 nav ul li a{
