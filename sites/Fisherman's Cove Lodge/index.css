@@ -1,9 +1,33 @@
+:root{
+    --aerial: url("https://fishermanscovelodge.com/index_htm_files/14115.webp");
+    --logo: url("https://fishermanscovelodge.com/index_htm_files/17222.webp");
+
+    --fish: url("https://fishermanscovelodge.com/index_htm_files/11974.webp");
+    --fishingBoat: url("https://fishermanscovelodge.com/index_htm_files/11951.webp");
+
+    --groupOfHogs: url("https://fishermanscovelodge.com/index_htm_files/11976.webp");
+    --huntedHogs: url("https://fishermanscovelodge.com/index_htm_files/11975.webp");
+
+    --cabin1: url("https://fishermanscovelodge.com/index_htm_files/11965.webp");
+    --cabin2: url("https://fishermanscovelodge.com/index_htm_files/12219.webp");
+
+    --phone: url("https://imgs.search.brave.com/JXEaN6lJEHMueCdi5H1LrJYqxb33D3Lx1kfmxdotWUI/rs:fit:1024:1024:1/g:ce/aHR0cHM6Ly9wdXJl/cG5nLmNvbS9wdWJs/aWMvdXBsb2Fkcy9s/YXJnZS9wdXJlcG5n/LmNvbS1waG9uZS1p/Y29uc3ltYm9sc2lj/b25zYXBwbGUtaW9z/aW9zaW9zLTgtaWNv/bnNpb3MtOC03MjE1/MjI1OTYwOThhb21y/NS5wbmc");
+
+    --blue: #205a94;
+    --gold: #889420;
+    --purple: #712094;
+    --red: #b8342c;
+    --orange: #d2672a;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-color: #fcf8f1;
+}
 nav{
     display: none;
     overflow: hidden;
@@ -11,4 +35,65 @@ nav{
 
 .cabinButton{
     font-size: 1.5rem;
+}
+
+header{
+    background-color: var(--blue);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    border-bottom: 1rem solid var(--orange);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    border-bottom: 1rem solid var(--orange);
+    padding-bottom: .5rem;
+
+    
+}
+
+header picture{
+    grid-area: 1 / 2 / 1 / 3;
+    
+}
+
+header picture img{
+    width: 50%;
+    margin-left: 25%;
+}
+
+
+#contacts{
+    grid-area: 2 / 2 / 2 / 3;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    justify-items: center;
+    scale: 120%;
+}
+
+#contacts img:hover{
+    scale: 110%;
+}
+
+main{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    
+}
+
+main h1,h2{
+    text-align: center;
+    background-color: #205a94;
+}
+
+#intro iframe{
+    width: 80%;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: auto;
 }
