@@ -1,0 +1,118 @@
+@import url('indexStyle.css');
+
+body{
+    background-color: var(--deepBlue);
+    font-family: "Berlin Sans FB";
+}
+header{
+    font-family: "Corben", serif;
+}
+.packages{
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--midBlue);
+    line-height: 1.4rem;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border: 2px solid #fff;
+}
+
+.packages h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#alpha{
+    text-align: center;
+    margin-top: 30px;
+}
+footer{
+    background-color: var(--midBlue);
+}
+
+
+@media screen and (max-width: 785px) {
+    body{
+        width: 100vw;
+        background-color: var(--lightBlue);
+        background-image: none;
+        height: 100vw;
+    }
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 1000px;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+        background-image: linear-gradient(var(--deepBlue), var(--lightBlue));
+       
+    }
+    
+    
+    main h2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .packages{
+        /* background-image: linear-gradient(var(--lightBlue), var(--deepBlue)); */
+        min-height: 100px;
+        padding: 10px;
+        width: 75%;
+        border-radius: 5px;
+        background-color: var(--deepBlue);
+        border: 2px solid #fff;
+    }
+    
+    /* .packages h2{
+        text-shadow: 2px 2px #333;
+    } */
+    
+    .packages ul{
+        list-style-type: circle;
+        padding-left: 30px;
+    }
+    
+    .packages ul li{
+        line-height: 2rem;
+        font-size: 1.1rem;
+    }
+
+    
+    header{
+        border-bottom: none;
+        min-height: 50px;
+        background-image: none;
+        display: flex;
+    }
+
+    #container #miata{
+        display: block;
+    }
+
+    footer{
+        margin-top: 50px;
+        background-color: var(--lightBlue);
+    }
+    
+    #mobileNav{
+        display: block;
+        
+    }
+    
+    #HoO{
+        margin-top: 0px;
+        margin-bottom: 20px;
+        line-height: 10px;
+    }
+
+
+    
+}
+

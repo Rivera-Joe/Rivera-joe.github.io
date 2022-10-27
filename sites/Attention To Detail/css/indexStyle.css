@@ -1,0 +1,451 @@
+:root{
+    --deepBlue: #11243a;
+    --midBlue: #1a4c7d;
+    --lightBlue: #4e92d4;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    /* background-image: linear-gradient(var(--deepBlue), var(--lightBlue)); */
+    /* background-repeat: no-repeat; */
+    background-color: var(--deepBlue);
+    font-family: "Berlin Sans FB";
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    min-height: 300px;
+    background-color: var(--deepBlue);
+    background-image: url("../images/miataHeaderBG.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 30px solid var(--midBlue);
+    font-family: "Corben", serif;
+    
+
+}
+nav{
+    width: 60%;
+}
+
+nav ul{
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+    list-style-type: none;
+    padding-right: 10%;
+}
+
+nav ul li{
+    background-color: var(--midBlue);
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: 2px solid var(--lightBlue);
+   
+}
+
+nav ul li:hover{
+    background-color: var(--deepBlue);
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+#infoContainer{
+    width: 30%;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#infoContainer img{
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+#mobileNav{
+    display: none;
+}
+
+#container #miata{
+    display: none;
+}
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    /* text-shadow: 1px 1px #000; */
+    
+    
+}
+#container *{
+    max-width: 680px;
+}
+
+   
+
+footer{
+    display: flex;
+    max-height: 50px;
+    width: 100vw;
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
+    justify-content: space-between;
+    background-color: var(--lightBlue);
+    margin-bottom: 0;
+    margin-top: 100px;
+    align-items: center;
+    font-family: "Berlin Sans FB";
+    background-color: var(--midBlue);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+footer p{
+    display: block;
+}
+footer div{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content:right;
+    gap: 5px;
+    align-items: center;
+}
+footer div img{
+    height: 35px;
+    width: 35px;
+}
+
+#HoO{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#HoO *{
+    line-height: 50px;
+}
+
+#HoO h2{
+  margin-bottom: 20px;
+}
+
+#map{
+    display: inline;
+}
+#detailedCar{
+    display: inline;
+}
+
+#quote{
+    line-height: 1.5rem;
+}
+#top{
+    margin-top: 40px;
+}
+
+main{
+    width: 100vw;
+}
+
+@media screen and (max-width: 1385px) {
+    nav ul li{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1235px) {
+    nav ul li{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    body{
+        width: 100vw;
+        
+   
+    }
+    nav{
+        display: none;
+    }
+    #infoContainer{
+        
+        background-color: var(--deepBlue);
+        color: #fff;
+        padding: 10px;
+        font-family: "Corben", serif;
+        border-bottom: 5px solid #fff;
+        background-image: none;
+        width: 100%;
+        font-size: 1rem;
+        min-height: 100px;
+
+    }
+    header picture{
+        display: none;
+    }
+    /* #brand{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    #brand img{
+        width: px;
+        height: 25px;
+        
+    } */
+    h2{
+        text-align: center;
+        
+    }
+    header h2{
+        margin-bottom: 10px;
+    }
+/* contents under main heading */
+    #itemHolder{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        
+    }
+    #info{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding-left: 5px;
+        justify-content: space-around;
+        font-size: 1rem;
+       
+    }
+   
+   
+/* set css for hamburger */
+    #itemHolder #ham{
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-right: 5px;
+        
+    }
+
+/* set css for internal parts of hamburger */
+    #bar{
+        content: '';
+        background-color: #fff;
+        height: 7px;
+        width: 40px;
+        border-radius: 20px;
+        transition: all 1s ease;
+    }
+
+    #bar::before{
+        content: '';
+        background-color: #fff;
+        height: 7px;
+        width: 40px;
+        border-radius: 20px;
+        transform: translateY(-13px);
+        position: absolute;
+        transition: all 1s ease;
+    }
+
+    #bar::after{
+        content: '';
+        background-color: #fff;
+        height: 7px;
+        width: 40px;
+        border-radius: 20px;
+        transform: translateY(13px);
+        position: absolute;
+        transition: all 1s ease;
+    }
+
+    /* show menu X after click*/
+
+    #ham.open #bar::before{
+        transform: rotate(45deg);
+    }
+
+    #ham.open #bar::after{
+        transform: rotate(-45deg);
+    }
+
+    #ham.open #bar{
+        background: transparent;
+    }
+
+    main{
+        font-family: "Berlin Sans FB";
+        color: #fff;
+        background-image: linear-gradient(var(--deepBlue), var(--lightBlue));
+    }
+
+    #top{
+        margin-top: 20px;
+    }
+    /* #container{
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+
+    } */
+    #container img{
+        display: inline;
+    }
+    #container > *{
+        width: 75%;
+    }
+
+    #quote p{
+        width: 100%;
+        /* text-shadow: 1px 1px #000; */
+    }
+
+   
+    /* footer{
+        display: flex;
+        height: 35px;
+        width: 100vw;
+        padding-left: 12.5vw;
+        padding-right: 12.5vw;
+        justify-content: space-between;
+        background-color: var(--lightBlue);
+        margin-bottom: 0;
+        margin-top: 20px;
+        align-items: center;
+        font-family: "Berlin Sans FB";
+    }
+    
+
+    footer p{
+        display: block;
+    }
+    footer div{
+        width: 100px;
+        height: 100%;
+        display: flex;
+        justify-content:right;
+        gap: 5px;
+        align-items: center;
+    }
+    footer div img{
+        height: 100%;
+        width: 35px;
+    } */
+
+    
+
+    #mobileNav{
+        
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+        list-style-type: none;
+        background-color: var(--deepBlue);
+        height: 100vh;
+        /* padding-top: 60px; */
+        overflow: hidden;
+        height: 0;
+        transition: all 1s ease-in;
+        font-family: "Corben", serif;
+
+    }
+    
+    #mobileNav .item{
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        
+    }
+
+    #mobileNav .item:active{
+        background-color: var(--midBlue);
+    }
+
+
+    #mobileNav li a{
+        color: #fff;
+    }
+
+    /* negate main changes going into mobile */
+
+    body{
+        background-color: var(--lightBlue);
+    }
+    header{
+        border-bottom: none;
+        min-height: 60px;
+    }
+
+    #container #miata{
+        display: block;
+    }
+
+    footer{
+        margin-top: 50px;
+    }
+    
+    #mobileNav{
+        display: block;
+    }
+    
+    #HoO{
+        margin-top: 0px;
+        margin-bottom: 20px;
+        line-height: 10px;
+    }
+
+    footer{
+        background-color: var(--lightBlue);
+    }
+
+    #map{
+        max-width: 600px;
+        max-height: 600px;
+    }
+   
+    #container #detailedCar{
+        display: none;
+    }
+
+    
+    
+   
+}
