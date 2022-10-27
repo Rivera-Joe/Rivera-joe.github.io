@@ -21,7 +21,11 @@ window.onload = function(){
     }
 
     leftButton.onclick = function(){
-        carousel.src = imageSources[0];
+        location--;
+        if(location < 0){
+            location = 0;
+        }
+        carousel.src = imageSources[location];
     }
 
 }

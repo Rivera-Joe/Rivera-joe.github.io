@@ -18,6 +18,8 @@
     --purple: #712094;
     --red: #b8342c;
     --orange: #d2672a;
+    --offWhite: #fcf8f1;
+    --greyBrown: #c7b3a1;
 }
 
 *{
@@ -26,7 +28,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #fcf8f1;
+    background-color: var(--offWhite);
 }
 nav{
     display: none;
@@ -67,7 +69,7 @@ header picture img{
 #contacts{
     grid-area: 2 / 2 / 2 / 3;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style-type: none;
     align-items: center;
     justify-items: center;
@@ -83,12 +85,23 @@ main{
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
+    background-color: var(--blue);
+    border: 1rem solid var(--orange);
+    border-radius: 25px;
     
 }
 
 main h1,h2{
     text-align: center;
-    background-color: #205a94;
+    
+}
+
+section{
+   border: .5rem solid var(--orange);
+   border-radius: 25px;
+   background-color: var(--greyBrown);
+   width: 80%;
+   margin: 1rem auto 0 10%;
 }
 
 #intro iframe{
@@ -97,3 +110,35 @@ main h1,h2{
     margin-left: 10%;
     margin-right: auto;
 }
+
+#cabinBox, #fishBox{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: auto;
+}
+
+#cabinBox img{
+
+    width: 340px;
+    height: 255px;
+    max-width: 340px;
+    max-height: 255px;
+}
+
+#hogHunting{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+#hogHunting img{
+
+    max-width: 550px;
+    max-height: 400px;
+}
+
+
